@@ -1,0 +1,15 @@
+# models/schema.yml
+version: 2
+
+sources:
+  - name: minalp
+    database: dl_captura
+    schema: minalp
+    tables:
+      - name: v_facturacion
+        description: "Tabla normalizada de facturación creada por Airbyte"
+
+models:
+  - name: v_facturacion_gec
+    description: "Datos de facturación GEC3 renombrados para evitar conflictos"
+
